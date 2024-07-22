@@ -1,0 +1,15 @@
+{
+  "name": "nextjs-dashboard",
+  "scripts": {
+    "frontend:dev": "npm run dev --workspace=@nextjs-dashboard/frontend",
+    "frontend:build": "npm run build --workspace=@nextjs-dashboard/frontend",
+    "cdk:deploy-working": "cd infrastructure; cdk deploy working -f --require-approval never --output .cdk-out-working",
+    "cdk:destroy-working": "cd infrastructure; cdk destroy working -f --require-approval never --output .cdk-out-working",
+    "cdk:deploy-testing": "cd infrastructure; cdk deploy testing -f --require-approval never --output .cdk-out-testing",
+    "cdk:destroy-testing": "cd infrastructure; cdk destroy testing -f --require-approval never --output .cdk-out-testing",
+    "cdk:deploy-test": "cd infrastructure; cdk deploy test -f --require-approval never --output .cdk-out-test",
+    "cdk:destroy-test": "cd infrastructure; cdk destroy test -f --require-approval never --output .cdk-out-test",
+    "psql:start": "docker run --rm --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres",
+    "psql:stop": "docker container stop some-postgres"
+  }
+}

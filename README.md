@@ -1,2 +1,3 @@
-# nextjs-strapi-cms
-Serverless, ECS, Fargate, Application Load Balancer, Custom Postgress with PgBouncer  setup
+# nextjs-strapi-cms-aws-cdk
+
+Serverless, ECS, Fargate, Application Load Balancer, Custom Postgress with PgBouncer setup
